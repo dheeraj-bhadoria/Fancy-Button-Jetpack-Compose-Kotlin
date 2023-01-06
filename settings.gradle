@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "Fancy Button Jetpack Compose"
 include ':app'
 include ':mylibrary'
+
