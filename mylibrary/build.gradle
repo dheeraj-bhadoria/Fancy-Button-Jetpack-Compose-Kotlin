@@ -1,17 +1,18 @@
 plugins {
     id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
     id 'maven-publish'
 }
 
 android {
     namespace 'com.jetpack.mylibrary'
-    compileSdk 32
+    compileSdkVersion 32
+
 
     defaultConfig {
-        minSdk 21
-        targetSdk 32
-
+        minSdkVersion 21
+        targetSdkVersion 32
+        compileSdkVersion 32
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -47,6 +48,7 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 }
 
+
 afterEvaluate {
     publishing {
         publications {
@@ -58,7 +60,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.jetpack.mylibrary'
                 artifactId = 'fancy-button'
-                version = '0.0.3'
+                    version = '0.0.4'
             }
         }
     }
