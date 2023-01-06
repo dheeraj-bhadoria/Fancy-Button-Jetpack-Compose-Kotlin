@@ -60,7 +60,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.jetpack.mylibrary'
                 artifactId = 'fancy-button'
-                    version = '0.0.4'
+                version = '0.0.4'
             }
         }
     }
