@@ -58,7 +58,7 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.jetpack.mylibrary'
+                groupId = 'com.jetpack.compose.fancybutton'
                 artifactId = 'fancy-button'
                 version = '0.0.4'
             }
